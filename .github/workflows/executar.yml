@@ -3,6 +3,9 @@ name: Executar script
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "*/5 * * * *"
+
 jobs:
   executar:
     runs-on: ubuntu-latest
